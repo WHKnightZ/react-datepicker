@@ -122,10 +122,9 @@
   "scripts": {
     "eslint": "eslint --ext .js,.jsx src test",
     "flow": "flow",
-    "precommit": "lint-staged --allow-empty",
-    "sass-lint": "stylelint 'src/stylesheets/*.scss'",
+    "precommit": "lint-staged",
+    "sass-lint": "sass-lint --config .sass-lint.yml 'src/stylesheets/*.scss'",
     "lint": "run-p eslint flow sass-lint",
-    "prettier": "prettier --write '**/*.{js,jsx}'",
     "start": "yarn --cwd docs-site install && yarn --cwd docs-site start",
     "test": "cross-env NODE_ENV=test karma start karma.conf.js --single-run",
     "test:watch": "cross-env NODE_ENV=test karma start karma.conf.js --watch",
@@ -136,8 +135,7 @@
     "css:dev": "node-sass --output-style expanded src/stylesheets/datepicker.scss > dist/react-datepicker.css",
     "css:modules:dev": "node-sass --output-style expanded src/stylesheets/datepicker-cssmodules.scss | tee dist/react-datepicker-cssmodules.css dist/react-datepicker.module.css",
     "build:js": "rollup -c",
-    "js:dev": "rollup -cw",
-    "prepare": "husky install"
+    "js:dev": "rollup -cw"
   },
   "lint-staged": {
     "*.{js,jsx,json,css,scss,md}": [
