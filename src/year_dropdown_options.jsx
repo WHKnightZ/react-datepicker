@@ -51,7 +51,6 @@ export default class YearDropdownOptions extends React.Component {
   componentDidMount() {
     this.myRef.current.scrollIntoView({
       block: 'center',
-      inline: 'center',
     });
   }
 

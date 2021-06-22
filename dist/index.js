@@ -875,7 +875,6 @@ var ba = (function (e) {
         value: function () {
           this.myRef.current.scrollIntoView({
             block: "center",
-            inline: "center",
           });
         },
       },

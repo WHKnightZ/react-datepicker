@@ -1,8 +1,8 @@
 {
-  "author": "HackerOne",
-  "name": "react-datepicker",
+  "author": "wh.knightz",
+  "name": "@wh.knightz/react-datepicker",
   "description": "A simple and reusable datepicker component for React",
-  "version": "4.1.1",
+  "version": "1.0.0",
   "license": "MIT",
   "homepage": "https://github.com/WHKnightZ/react-datepicker",
   "main": "dist/index.js",
