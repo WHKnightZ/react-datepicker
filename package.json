@@ -2,7 +2,7 @@
   "author": "wh.knightz",
   "name": "@wh.knightz/react-datepicker",
   "description": "A simple and reusable datepicker component for React",
-  "version": "1.0.0",
+  "version": "1.0.2",
   "license": "MIT",
   "homepage": "https://github.com/WHKnightZ/react-datepicker",
   "main": "dist/index.js",
@@ -15,7 +15,8 @@
     "dist",
     "lib",
     "es",
-    "src/stylesheets"
+    "src/stylesheets",
+    "types"
   ],
   "sideEffects": [
     "*.css"

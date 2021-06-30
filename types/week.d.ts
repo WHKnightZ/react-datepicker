@@ -1,0 +1,51 @@
+export default class Week {
+    static get defaultProps(): {
+        shouldCloseOnSelect: boolean;
+    };
+    static propTypes: {
+        ariaLabelPrefix: any;
+        disabledKeyboardNavigation: any;
+        day: any;
+        dayClassName: any;
+        disabledDayAriaLabelPrefix: any;
+        chooseDayAriaLabelPrefix: any;
+        endDate: any;
+        excludeDates: any;
+        filterDate: any;
+        formatWeekNumber: any;
+        highlightDates: any;
+        includeDates: any;
+        inline: any;
+        shouldFocusDayInline: any;
+        locale: any;
+        maxDate: any;
+        calendarStartDay: any;
+        minDate: any;
+        month: any;
+        onDayClick: any;
+        onDayMouseEnter: any;
+        onWeekSelect: any;
+        preSelection: any;
+        selected: any;
+        selectingDate: any;
+        selectsEnd: any;
+        selectsStart: any;
+        selectsRange: any;
+        showWeekNumber: any;
+        startDate: any;
+        setOpen: any;
+        shouldCloseOnSelect: any;
+        renderDayContents: any;
+        handleOnKeyDown: any;
+        isInputFocused: any;
+        containerRef: any;
+        monthShowsDuplicateDaysEnd: any;
+        monthShowsDuplicateDaysStart: any;
+    };
+    handleDayClick: (day: any, event: any) => void;
+    handleDayMouseEnter: (day: any) => void;
+    handleWeekClick: (day: any, weekNumber: any, event: any) => void;
+    formatWeekNumber: (date: any) => any;
+    renderDays: () => any[];
+    render(): any;
+}
